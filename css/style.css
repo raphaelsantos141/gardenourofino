@@ -2128,3 +2128,8 @@ ul.location_icon span {
      top: inherit;
      bottom: 10px;
 }
+
+@media (max-width: 768px) {
+     #main_slider a.carousel-control-prev, a.carousel-control-next {
+          display: none;
+     }
