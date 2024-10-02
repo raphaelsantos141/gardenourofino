@@ -1,6 +1,16 @@
 /*---------------------------------------------------------------------
-    File Name: custom.js
+	File Name: custom.js
 ---------------------------------------------------------------------*/
+
+// Mostrar o botão do WhatsApp ao rolar a página
+window.onscroll = function () {
+	const whatsappButton = document.getElementById('whatsapp-button');
+	if (document.documentElement.scrollTop > 200) {
+		whatsappButton.style.display = 'flex';
+	} else {
+		whatsappButton.style.display = 'none';
+	}
+};
 
 $(function () {
 
@@ -55,7 +65,7 @@ $(function () {
 		cursorcolor: "#9b9b9c",
 	});
 
-	
+
 	/* NiceSelect
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
